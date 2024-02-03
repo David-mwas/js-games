@@ -1,0 +1,74 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background:rgba(2, 2, 2, 0.9);
+}
+h1{
+  text-transform: uppercase;
+    color: transparent;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: white;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+hr {
+  margin: auto;
+  padding: auto;
+  width: 450px;
+  height: 3px;
+  background: #000;
+}
+#board {
+  background:rgba(238, 232, 232, 0.2);
+  width: 450px;
+  height: 450px;
+  /* background: #000; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow:1px 2px 13px rgba(245, 197, 197, 0.9);
+}
+.tile {
+  color: transparent;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: tomato;
+  /* text-shadow: 1px 2px 13px tomato; */
+  width: 147px;
+  height: 147px;
+  font-size: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.horizontal-line {
+  border-bottom: 1px solid white;
+}
+.vertical-line {
+  border-right: 1px solid white;
+}
+.winner {
+   background:rgba(44, 43, 43.6);
+  color: transparent;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: green;
+  /* text-shadow: 1px 2px 13px green; */
+}
+p {
+  color: transparent;
+  font-size: 25px;
+  font-weight: 900;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: green;
+  text-shadow: 1px 2px 13px tomato;
+}

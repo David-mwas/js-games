@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.738), rgba(0, 0, 0, 0.83)),
+    url("./assets/images/mario-bg.jpg");
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  mix-blend-mode: normal;
+  /* background-repeat: no-repeat; */
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 45px;
+  color: green;
+  -webkit-text-stroke: 2px white;
+  font-family: fantasy;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 35px;
+  color: white;
+  -webkit-text-stroke: 2px green;
+  font-family: fantasy;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin-bottom: 0px;
+}
+#board {
+  width: 540px;
+  height: 540px;
+  background: url("./assets/images/soil.png");
+  background-size: cover;
+  border: 3px solid white;
+  border-radius: 25px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#board div {
+  /* board=540*540, divide 3*3 times => 180*180 per div */
+  width: 180px;
+  height: 180px;
+  background: url("./assets/images/pipe.png");
+  background-size: cover;
+}
+
+#board div img {
+  /* all img tags inside tiles */
+  width: 100px;
+  height: 100px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h2 {
+    font-size: 35px;
+    margin-bottom: 30;
+  }
+  #board {
+    width: 360px;
+    height: 360px;
+  }
+  #board div {
+    /* board=360*360, divide 3*3 times => 120*120 per div */
+    width: 120px;
+    height: 120px;
+  }
+  #board div img {
+    width: 65px;
+    height: 65px;
+  }
+}
